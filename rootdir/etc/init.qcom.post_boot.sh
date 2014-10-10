@@ -77,9 +77,9 @@ case "$target" in
      #echo 4 > /sys/devices/system/cpu/cpufreq/ondemand/sampling_down_factor
      echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
      echo "interactive" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
-     echo 1 > /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
-     echo 384000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-     echo 384000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+     #echo 1 > /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
+     echo 192000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+     echo 192000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
      chown -h root.system /sys/devices/system/cpu/mfreq
      chmod -h 220 /sys/devices/system/cpu/mfreq
      chown -h root.system /sys/devices/system/cpu/cpu1/online
